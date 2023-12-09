@@ -10,7 +10,7 @@ function getParameterByName(name, url) {
 
 window.onload = function() {
   var tab = getParameterByName("t");
-  if (!isNaN(tab)) {
+  if (!isNaN(tab) && tab <= 3) {
     document.querySelector(`.outer-nav li:nth-child(${tab})`).click();
   }
 };
